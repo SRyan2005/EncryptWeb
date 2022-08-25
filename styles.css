@@ -2,7 +2,8 @@ body {
   background-color: #0F2842;
 }
 h1 {
-  
+  font-family: 'Mechanismo';
+  font-size: 48px;
 }
 h2 {
   
@@ -15,4 +16,10 @@ h4 {
 }
 p {
   
+}
+
+@font-face {
+    font-family: Mechanismo;
+    font-style: normal;
+    src: url("https://https://sryan2005.github.io/EncryptWeb/MechanismoRegular-p7ywa.otf") format("opentype");
 }
