@@ -3,6 +3,8 @@ body {
 }
 h1 {
   font-family: 'Mechanismo';
+  font-size: 48px;
+  color: white;
 }
 h2 {
   
@@ -14,7 +16,7 @@ h4 {
   
 }
 p {
-  
+  color: white;
 }
 
 @font-face {
