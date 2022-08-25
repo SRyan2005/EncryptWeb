@@ -4,7 +4,7 @@ body {
 h1 {
   font-family: 'Mechanismo';
   font-size: 48px;
-  color: white;
+  color: #FFFFFF;
 }
 h2 {
   
@@ -16,7 +16,7 @@ h4 {
   
 }
 p {
-  color: white;
+  color: #FFFFFF;
 }
 
 @font-face {
