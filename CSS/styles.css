@@ -13,6 +13,7 @@
 @font-face {
   font-family: "BerlinBold";
   src: url("./Berlin Bold.ttf") format("truetype");
+}
 
 :root {
   --Base: #0F2842;
