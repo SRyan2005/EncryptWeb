@@ -93,7 +93,7 @@ section.videos ul.videoList {
 
 section.videos ul.videoList li {
   width: 50%;
-  padding: 1em;
+  padding: 2em;
 }
 
 section.videos ul.videoList li iframe.video {
