@@ -12,6 +12,7 @@
 
 @font-face {
   font-family: "BerlinBold";
+  font-weight: 200;
   src: url("./BerlinBold.ttf") format("truetype");
 }
 
