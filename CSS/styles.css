@@ -12,13 +12,13 @@
 
 @font-face {
   font-family: "BerlinBold";
-  font-weight: 200;
   src: url("./BerlinBold.ttf") format("truetype");
 }
 
 :root {
   --Base: #0F2842;
   --White: #FFFFFF;
+  --OffWhite: #ececec;
   --Accent: #FCD44C;
 }
 
@@ -32,7 +32,7 @@ a {
 }
 
 body {
-  background-color: var(--Base);
+  background-color: var(--OffWhite);
   color: var(--White);
   letter-spacing: 1.5px;
 }
@@ -58,8 +58,8 @@ header ul.nav a:hover {
   color: var(--Accent);
 }
 
-span.yellowTxt {
-  color: var(--Accent);
+span {
+  font-family: 'Mechanismo';
 }
 
 section.hero {
