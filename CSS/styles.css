@@ -1,26 +1,96 @@
-body {
-  background-color: #0F2842;
-}
-h1 {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: 'Mechanismo';
-  font-size: 48px;
-  font-weight: 150;
-  color: #FFFFFF;
-}
-h2 {
-  
-}
-h3 {
-  
-}
-h4 {
-  
-}
-p {
-  color: #FFFFFF;
 }
 
 @font-face {
-    font-family: "Mechanismo";
-    src: url("https://sryan2005.github.io/EncryptWeb/CSS/MechanismoRegular-p7ywa.otf") format("opentype");
+  font-family: "Mechanismo";
+  src: url("./MechanismoRegular-p7ywa.otf") format("opentype");
+}
+
+:root {
+  --Base: #0F2842;
+  --White: #FFFFFF;
+  --Accent: #FCD44C;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--White);
+}
+
+body {
+  background-color: var(--Base);
+  color: var(--White);
+  letter-spacing: 1.5px;
+}
+
+header {
+  padding: 1em;
+  padding-bottom: 1.2em;
+  background-color: var(--Base);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 1em 1em;
+  position: absolute;
+  width: 100vw;
+}
+
+header ul.nav {
+  display: flex;
+  gap: 4ex;
+}
+
+header ul.nav a:hover {
+  color: var(--Accent);
+}
+
+span.yellowTxt {
+  color: var(--Accent);
+}
+
+section.hero {
+  background-color: #091929;
+  background-image: url('../Images/WebHero.jpg');
+  padding: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50vh;
+}
+
+section.hero h1 {
+  color: var(--Accent);
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+section.hero p {
+  font-size: 1.2em;
+  width: 75%;
+}
+
+section.videos {
+  padding: 1em;
+}
+
+section.videos ul.videoList {
+  display: flex;
+}
+
+section.videos ul.videoList li {
+  width: 50%;
+  padding: 1em;
+}
+
+section.videos ul.videoList li iframe.video {
+  border-radius: 1em;
+  width: 100%;
 }
