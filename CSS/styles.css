@@ -37,21 +37,46 @@ body {
   letter-spacing: 1.5px;
 }
 
+#encrypt {
+  display: flex;
+  align-items: center;
+  gap: 2ex;
+}
+
+#logo {
+  border-radius: 40%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(132, 132, 132, 0.498);
+  margin-left: 0.5em;
+}
+
+/*Header Start*/
+
 header {
   padding: 1em;
   padding-bottom: 1.2em;
   background-color: var(--Base);
-  display: flex;
-  justify-content: space-between;
   align-items: center;
+  display: flex;
   border-radius: 0 0 1em 1em;
   position: absolute;
   width: 100vw;
+  gap: 3ex;
+}
+
+header a h2 {
+  font-family:'Mechanismo';
+  font-size: xx-large;
 }
 
 header ul.nav {
+  margin-left: auto;
+  margin-right: 0.5em;
+  align-content: center;
   display: flex;
-  gap: 4ex;
+  gap: 3ex;
+  font-size: large;
 }
 
 header ul.nav a:hover {
@@ -61,6 +86,9 @@ header ul.nav a:hover {
 span {
   font-family: 'Mechanismo';
 }
+
+/*Header End*/
+/*Banner Start*/
 
 section.hero {
   background-color: #091929;
@@ -83,20 +111,18 @@ section.hero p {
   width: 75%;
 }
 
-section.videos {
-  padding: 1em;
-}
+/*Banner End*/
 
-section.videos ul.videoList {
-  display: flex;
-}
-
-section.videos ul.videoList li {
-  width: 50%;
-  padding: 2em;
-}
-
-section.videos ul.videoList li iframe.video {
-  border-radius: 1em;
+.videolist {
+  text-align: center;
   width: 100%;
+}
+
+.videolist div {
+  padding: 3em;
+}
+
+.videolist iframe.video {
+  margin: 0.5em 1em;
+  border-radius: 2.5em;
 }

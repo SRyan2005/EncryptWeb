@@ -7,7 +7,14 @@
 
   <body>
     <header>
-      <a href="index.html"><h2 style="font-family:'Mechanismo'">Encrypt <span style="color: var(--Accent)">Coding</span></h2></a>
+      <a id="encrypt" href="index.html">
+        <div id="logo">
+          <img src="/Images/EncryptLogo.png" height="70">
+        </div>
+        <h2>Encrypt 
+          <span style="color: var(--Accent)">Coding</span>
+        </h2>
+      </a>
       <ul class="nav">
         <li><a href="about.html">About Us</a></li>
         <li><a href="archive.html">Archive</a></li>
@@ -23,20 +30,18 @@
       </p>
     </section>
 
-    <section class="videos">
-      <ul class="videoList">
-        <li>
-          <iframe width="560" height="315"
+    <div class="videolist">
+      <div>
+        <iframe class="video" width="480" height="260"
           src="https://www.youtube.com/embed/dtvYKeXv2mM" frameborder="0"
-          allowfullscreen="true" class="video" id="introVid"></iframe>
-        </li>
-        <li>
-          <iframe width="560" height="315"
-          src="https://www.youtube.com/embed/dtvYKeXv2mM" cid="0" frameborder="0"
-          allowfullscreen="true" class="video" id="latestVid"></iframe>
-        </li>
-      </ul>
-    </section>
+          allowfullscreen="true" id="introVid">
+        </iframe>
+        <iframe class="video" width="480" height="260"
+          src="https://www.youtube.com/embed/3KCtuNzkp4M" frameborder="0"
+          allowfullscreen="true" id="latestVid">
+        </iframe>
+      </div>
+    </div>
   </body>
 
   <script src="./JS/fetchYTLinks.js"></script>
