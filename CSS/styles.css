@@ -100,7 +100,7 @@ section.hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 60vh;
+  height: 52vh;
 }
 
 section.hero h1 {
@@ -127,7 +127,6 @@ section.hero p {
 
 .videolist iframe.video {
   border-radius: 2.5em;
-  width: 100%;
-  margin: 1em 0;
-  box-shadow: 0.1em 0.1em 1em 0.05em #0000006f;
+  margin: 0.5em 3em;
+  box-shadow: 0.1em 0.1em 1em 0.05em #00000006;
 }
