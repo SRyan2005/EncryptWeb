@@ -104,6 +104,9 @@ span {
 section.hero {
   background-color: #091929;
   background-image: url("../Images/WebHero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 5em;
   display: flex;
   flex-direction: column;
