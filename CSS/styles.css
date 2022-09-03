@@ -150,8 +150,9 @@ section.hero p {
   color: black;
   font-weight: 500;
   font-size: 40px;
-  margin-bottom: 20px;
-  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .question {
@@ -187,7 +188,6 @@ section.hero p {
 
 section#main-faq {
   padding-top: 15vh;
-  margin-left: 5vh;
 }
 
 body#faq {
@@ -253,25 +253,21 @@ label {
 
 #entirety-faq {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-}
-
-#divider {
-  margin-top: 130px;
-  border-left: 2px solid var(--Accent);
-  height: 800px;
-  position: absolute;
-  left: 50%;
-  margin-left: -3px;
-  top: 0;
+  margin-bottom: 125px;
 }
 
 #form-h1 {
-  margin-top: 125px;
   font-weight: 500;
   font-size: 40px;
   font-style: "BerlinBold";
   color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -50px;
 }
 
 #button {
@@ -333,5 +329,44 @@ label {
 
 form {
   margin-left: 15px;
-  margin-top: 5px;
+}
+
+#main-faq > hr {
+  width: 9%;
+  height: 1px;
+  border-radius: 10px;
+  background-color: var(--Accent);
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  border-color: var(--Accent);
+  border-width: 1px;
+  border-style: solid;
+}
+
+#contact > hr {
+    width: 63%;
+    height: 1px;
+    border-radius: 10px;
+    background-color: var(--Accent);
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-color: var(--Accent);
+    border-width: 1px;
+    border-style: solid;
+}
+
+#divider {
+  margin-bottom: 70px;
+  width: 65%;
+  margin-right: 20px;
+  height: 1px;
+  border-radius: 10px;
+  background-color: var(--Base);
+  display: block;
+  margin-top: 20px;
+  border-color: var(--Base);
+  border-width: 1px;
+  border-style: solid;
 }
