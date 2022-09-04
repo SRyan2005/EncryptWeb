@@ -1,4 +1,3 @@
-
 .faq div {
   border: 1px solid;
   margin: 5px 0px;
@@ -87,15 +86,15 @@ textarea {
   border: 1px solid #ccc;
   border-top: 0;
   border-right: 0;
+  resize: none;
   letter-spacing: 2px;
   outline: none;
   border-left: 0;
-  font-style: 'BerlinRegular';
+  font-style: "BerlinRegular";
   box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 16px;
 }
-
 
 label {
   color: black;
@@ -204,16 +203,16 @@ form {
 }
 
 #contact > hr {
-    width: 63%;
-    height: 1px;
-    border-radius: 10px;
-    background-color: var(--Accent);
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    border-color: var(--Accent);
-    border-width: 1px;
-    border-style: solid;
+  width: 63%;
+  height: 1px;
+  border-radius: 10px;
+  background-color: var(--Accent);
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  border-color: var(--Accent);
+  border-width: 1px;
+  border-style: solid;
 }
 
 #divider {
