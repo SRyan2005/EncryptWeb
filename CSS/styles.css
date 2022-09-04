@@ -1,167 +1,167 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "BerlinBold";
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "BerlinBold";
 }
 
 @font-face {
-  font-family: "Mechanismo";
-  src: url("./MechanismoRegular-p7ywa.otf") format("opentype");
+	font-family: "Mechanismo";
+	src: url("./MechanismoRegular-p7ywa.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "BerlinBold";
-  src: url("./BerlinBold.ttf") format("truetype");
+	font-family: "BerlinBold";
+	src: url("./BerlinBold.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "BerlinRegular";
-  src: url("./BerlinRegular.ttf") format("truetype");
+	font-family: "BerlinRegular";
+	src: url("./BerlinRegular.ttf") format("truetype");
 }
 
 :root {
-  --Base: #0f2842;
-  --White: #ffffff;
-  --OffWhite: #ececec;
-  --Accent: #fcd44c;
+	--Base: #0f2842;
+	--White: #ffffff;
+	--OffWhite: #ececec;
+	--Accent: #fcd44c;
 }
 
 ul {
-  list-style-type: none;
+	list-style-type: none;
 }
 
 a {
-  text-decoration: none;
-  color: var(--White);
+	text-decoration: none;
+	color: var(--White);
 }
 
 body {
-  background-color: var(--OffWhite);
-  color: var(--White);
-  letter-spacing: 1.5px;
+	background-color: var(--OffWhite);
+	color: var(--White);
+	letter-spacing: 1.5px;
 }
 
 #encrypt {
-  display: flex;
-  align-items: center;
-  gap: 2ex;
+	display: flex;
+	align-items: center;
+	gap: 2ex;
 }
 
 #logo {
-  border-radius: 40%;
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgba(132, 132, 132, 0.498);
-  margin-left: 0.5em;
+	border-radius: 40%;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgba(132, 132, 132, 0.498);
+	margin-left: 0.5em;
 }
 
 /*Header Start*/
 
 header {
-  padding: 1em;
-  padding-bottom: 1.2em;
-  background-color: var(--Base);
-  align-items: center;
-  display: flex;
-  border-radius: 0 0 1.5em 1.5em;
-  position: fixed;
-  width: 100vw;
-  gap: 3ex;
-  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+	padding: 1em;
+	padding-bottom: 1.2em;
+	background-color: var(--Base);
+	align-items: center;
+	display: flex;
+	border-radius: 0 0 1.5em 1.5em;
+	position: fixed;
+	width: 100vw;
+	gap: 3ex;
+	box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
 }
 
 header a h2 {
-  font-family: "Mechanismo";
-  font-size: xx-large;
+	font-family: "Mechanismo";
+	font-size: xx-large;
 }
 
 header ul.nav {
-  margin-left: auto;
-  margin-right: 0.5em;
-  align-content: center;
-  display: flex;
-  gap: 3ex;
-  font-size: large;
+	margin-left: auto;
+	margin-right: 0.5em;
+	align-content: center;
+	display: flex;
+	gap: 3ex;
+	font-size: large;
 }
 
 header ul.nav a {
-  transition: 0.5s;
+	transition: 0.5s;
 }
 
 header ul.nav a:hover {
-  color: var(--Accent);
-  transition: 0.5s;
+	color: var(--Accent);
+	transition: 0.5s;
 }
 
 span {
-  font-family: "Mechanismo";
+	font-family: "Mechanismo";
 }
 
 /*Header End*/
 /*Banner Start*/
 
 section.hero {
-  background-color: #091929;
-  background-image: url("../Images/WebHero.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 5em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 52vh;
+	background-color: #091929;
+	background-image: url("../Images/WebHero.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 5em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 52vh;
 }
 
 section.hero h1 {
-  color: var(--Accent);
-  font-size: 2em;
-  margin-bottom: 0.5em;
+	color: var(--Accent);
+	font-size: 2em;
+	margin-bottom: 0.5em;
 }
 
 section.hero p {
-  font-size: 1.2em;
-  width: 75%;
+	font-size: 1.2em;
+	width: 75%;
 }
 
 /*Banner End*/
 
 .videolist {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
-  padding: 3em 0;
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 100%;
+	padding: 3em 0;
 }
 
 .videoOutline {
-  --bWidth: 2px;
-  aspect-ratio: 16 / 9;
-  width: 50%;
-  padding: 1em 2em;
-  border-color: var(--Base);
-  border-width: calc(var(--bWidth)*2) var(--bWidth) 0 var(--bWidth);
+	--bWidth: 2px;
+	aspect-ratio: 16 / 9;
+	width: 50%;
+	padding: 1em 2em;
+	border-color: var(--Base);
+	border-width: calc(var(--bWidth)*2) var(--bWidth) 0 var(--bWidth);
 }
 
 .videoOutline:first-child {
-  border-left-width: 0;
+	border-left-width: 0;
 }
 
 .videoOutline:last-child {
-  border-right-width: 0;
+	border-right-width: 0;
 }
 
 .videoOutline legend {
-  color: var(--Base);
-  font-size: 1.5em;
-  padding: 0 2ex;
+	color: var(--Base);
+	font-size: 1.5em;
+	padding: 0 2ex;
 }
 
 .videolist iframe.video {
-  width: 100%;
-  height: 100%;
-  border-radius: 2.5em;
+	width: 100%;
+	height: 100%;
+	border-radius: 2.5em;
 }
