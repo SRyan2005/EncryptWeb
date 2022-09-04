@@ -139,9 +139,8 @@ section.hero p {
 
 .videoOutline {
 	--bWidth: 2px;
-	aspect-ratio: 16 / 9;
 	width: 50%;
-	padding: 1em 2em;
+	padding: 2em 2em;
 	border-color: var(--Base);
 	border-width: calc(var(--bWidth)*2) var(--bWidth) 0 var(--bWidth);
 }
@@ -161,7 +160,8 @@ section.hero p {
 }
 
 .videolist iframe.video {
+	max-width: 700px;
 	width: 100%;
-	height: 100%;
 	border-radius: 2.5em;
+	aspect-ratio: 16 / 9;
 }
