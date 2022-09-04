@@ -38,8 +38,11 @@ a {
 
 body {
   background-color: var(--OffWhite);
+  display: flex;
+  flex-direction: column;
   color: var(--White);
   letter-spacing: 1.5px;
+  min-height: 100vh;
 }
 
 #encrypt {
@@ -126,6 +129,7 @@ section.hero p {
 }
 
 /*Banner End*/
+/*Videos Start*/
 
 .videolist {
   display: flex;
@@ -165,3 +169,67 @@ section.hero p {
   height: 100%;
   border-radius: 2.5em;
 }
+
+/*Videos End*/
+/*HomePageTxt Start*/
+
+.HpAbt {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  font-size: 1.5em;
+  color: var(--Base);
+}
+
+.HpAbt h2 {
+  font-size: 2em;
+  border-bottom: 2px solid #fcd44c;
+  width: fit-content;
+}
+
+.HpAbt p {
+  margin: 1em 0;
+  text-align: justify;
+}
+
+.HpAbt a.readMore {
+  background-color: var(--Base);
+  width: max-content;
+  padding: 0.5em 1em;
+  border-radius: 0.15em;
+}
+
+/*HomePageTxt End*/
+/*Footer Start*/
+
+footer {
+  background-color: var(--Base);
+  padding: 3em;
+  text-align: center;
+  margin-top: auto;
+}
+
+footer ul.socialMedia {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1em 0;
+}
+
+footer ul.socialMedia li {
+  background-color: var(--sBg);
+  padding: 0.75em;
+  border-radius: 0.75em;
+  font-size: 1.5em;
+  transition: transform 0.1s;
+}
+
+footer ul.socialMedia li:hover {
+  transform: scale(110%);
+}
+
+footer ul.socialMedia i {
+  color: var(--sFg);
+  font-weight: bold;
+}
+
+/*Footer End*/
