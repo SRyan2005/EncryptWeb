@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'BerlinBold';
+  font-family: "BerlinBold";
 }
 
 @font-face {
@@ -15,11 +15,16 @@
   src: url("./BerlinBold.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "BerlinRegular";
+  src: url("./BerlinRegular.ttf") format("truetype");
+}
+
 :root {
-  --Base: #0F2842;
-  --White: #FFFFFF;
+  --Base: #0f2842;
+  --White: #ffffff;
   --OffWhite: #ececec;
-  --Accent: #FCD44C;
+  --Accent: #fcd44c;
 }
 
 ul {
@@ -59,14 +64,15 @@ header {
   background-color: var(--Base);
   align-items: center;
   display: flex;
-  border-radius: 0 0 1em 1em;
-  position: absolute;
+  border-radius: 0 0 1.5em 1.5em;
+  position: fixed;
   width: 100vw;
   gap: 3ex;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
 }
 
 header a h2 {
-  font-family:'Mechanismo';
+  font-family: "Mechanismo";
   font-size: xx-large;
 }
 
@@ -79,12 +85,17 @@ header ul.nav {
   font-size: large;
 }
 
+header ul.nav a {
+  transition: 0.5s;
+}
+
 header ul.nav a:hover {
   color: var(--Accent);
+  transition: 0.5s;
 }
 
 span {
-  font-family: 'Mechanismo';
+  font-family: "Mechanismo";
 }
 
 /*Header End*/
@@ -92,7 +103,7 @@ span {
 
 section.hero {
   background-color: #091929;
-  background-image: url('../Images/WebHero.jpg');
+  background-image: url("../Images/WebHero.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -117,16 +128,40 @@ section.hero p {
 /*Banner End*/
 
 .videolist {
+  display: flex;
+  flex-direction: row;
   text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
   width: 100%;
+  padding: 3em 0;
 }
 
-.videolist div {
-  padding: 3em;
+.videoOutline {
+  --bWidth: 2px;
+  aspect-ratio: 16 / 9;
+  width: 50%;
+  padding: 1em 2em;
+  border-color: var(--Base);
+  border-width: calc(var(--bWidth)*2) var(--bWidth) 0 var(--bWidth);
+}
+
+.videoOutline:first-child {
+  border-left-width: 0;
+}
+
+.videoOutline:last-child {
+  border-right-width: 0;
+}
+
+.videoOutline legend {
+  color: var(--Base);
+  font-size: 1.5em;
+  padding: 0 2ex;
 }
 
 .videolist iframe.video {
+  width: 100%;
+  height: 100%;
   border-radius: 2.5em;
-  margin: 0.5em 3em;
-  box-shadow: 0.1em 0.1em 1em 0.05em #00000006;
 }

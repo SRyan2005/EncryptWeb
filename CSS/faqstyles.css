@@ -1,0 +1,231 @@
+
+.faq div {
+  border: 1px solid;
+  margin: 5px 0px;
+  background-color: var(--White);
+}
+
+#faq-heading {
+  color: black;
+  font-weight: 500;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.question {
+  font-size: 24px;
+  background-color: var(--White);
+  margin: 0px;
+  padding: 15px;
+  max-width: 1075px;
+  color: rgb(19, 19, 19);
+  font-family: "BerlinBold";
+}
+
+.answer {
+  font-size: 20px;
+  margin: 0px;
+  padding: 0px 15px;
+  line-height: 2;
+  max-height: 0px;
+  max-width: 1075px;
+  font-family: "BerlinRegular";
+  overflow: hidden;
+  transition: 2s;
+  color: rgb(90, 90, 90);
+}
+
+.opener {
+  font-size: 25px;
+  float: right;
+  line-height: 0.8;
+  cursor: pointer;
+  transition: 1s;
+}
+
+section#main-faq {
+  padding-top: 15vh;
+}
+
+body#faq {
+  background-color: white;
+}
+
+p.question:hover {
+  background-color: rgb(244, 244, 244);
+}
+
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  font-size: 18px;
+  padding: 12px;
+  padding-left: 0px;
+  border: 1px solid #ccc;
+  border-top: 0;
+  border-right: 0;
+  font-style: "BerlinRegular";
+  border-left: 0;
+  letter-spacing: 2px;
+  border-radius: 0px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  outline: none;
+  margin-bottom: 16px;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  padding-left: 0px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-top: 0;
+  border-right: 0;
+  letter-spacing: 2px;
+  outline: none;
+  border-left: 0;
+  font-style: 'BerlinRegular';
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+
+label {
+  color: black;
+  font-size: 20px;
+}
+
+#contact-us {
+  font-family: "Roboto Slab", serif;
+}
+
+#contact {
+  margin: 20px;
+}
+
+#entirety-faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 125px;
+}
+
+#form-h1 {
+  font-weight: 500;
+  font-size: 40px;
+  font-style: "BerlinBold";
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -50px;
+}
+
+#button {
+  padding: 15px 40px;
+  background: #000;
+  border: 0;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "BerlinRegular";
+  border-radius: 2px;
+  font-size: 15px;
+  letter-spacing: 3px;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  cursor: pointer;
+  display: block;
+  margin: 15px auto;
+}
+
+#button::after,
+#button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+#button::after {
+  width: 30px;
+  height: 1px;
+  background: white;
+  transform: translateX(-3px);
+  margin-top: 0px;
+}
+
+#button::before {
+  content: "";
+  transform: rotate(-135deg) translateX(50%);
+  width: 11px;
+  height: 11px;
+  background: transparent;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  margin-top: -1px;
+}
+
+#button:hover {
+  padding: 15px 60px 15px 20px;
+}
+
+#button:hover::after,
+#button:hover::before {
+  opacity: 1;
+  right: 15px;
+}
+
+form {
+  margin-left: 15px;
+}
+
+#main-faq > hr {
+  width: 9%;
+  height: 1px;
+  border-radius: 10px;
+  background-color: var(--Accent);
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  border-color: var(--Accent);
+  border-width: 1px;
+  border-style: solid;
+}
+
+#contact > hr {
+    width: 63%;
+    height: 1px;
+    border-radius: 10px;
+    background-color: var(--Accent);
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-color: var(--Accent);
+    border-width: 1px;
+    border-style: solid;
+}
+
+#divider {
+  margin-bottom: 70px;
+  width: 65%;
+  margin-right: 20px;
+  height: 1px;
+  border-radius: 10px;
+  background-color: var(--Base);
+  display: block;
+  margin-top: 20px;
+  border-color: var(--Base);
+  border-width: 1px;
+  border-style: solid;
+}
