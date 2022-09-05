@@ -24,7 +24,7 @@
 }
 
 .answer {
-  font-size: 20px;
+  font-size: 22px;
   margin: 0px;
   padding: 0px 15px;
   line-height: 2;
@@ -33,7 +33,7 @@
   font-family: "BerlinRegular";
   overflow: hidden;
   transition: 2s;
-  color: rgb(90, 90, 90);
+  color: rgb(56, 56, 56);
 }
 
 .opener {
