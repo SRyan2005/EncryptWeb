@@ -5,6 +5,8 @@
     <title>Encrypt Coding - FAQ</title>
     <link rel="stylesheet" href="../CSS/styles.css">
     <link rel="stylesheet" href="../CSS/faqstyles.css">
+    <!--The below link is for the social media icons. Other icons can also be added-->
+	<script src="https://kit.fontawesome.com/aae8de8512.js" crossorigin="anonymous"></script>
 </head>
 
 <body id="faq">
@@ -26,7 +28,7 @@
     </header>
     <div id="entirety-faq">
         <section id="main-faq">
-            <h1 id="faq-heading">FAQ</h1>
+            <h1 class="title-heading">FAQ</h1>
             <hr>
             <div>
                 <p class="question" onclick='faq(this.querySelector(".opener"))'>Lorem ipsum dolor sit amet, consectetur
@@ -113,7 +115,7 @@
 
         <hr id="divider">
         <div id="contact">
-            <h1 id="form-h1">Have any questions? Send us a query!</h1>
+            <h1 class="title-heading">Have any questions? Send us a query!</h1>
             <hr>
             <br>
             <form name="contact-form" action="https://getform.io/f/374ee387-f862-4a7d-ad99-520aefb17b30" method="POST">
@@ -134,6 +136,24 @@
             </form>
         </div>
     </div>
+
+    <footer>
+        <h3>Contact Us</h3>
+        <ul class="socialMedia">
+            <li style="--sBg: #2d81e2; --sFg: #eeeeee;">
+                <a href="mailto:encryptcoding@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </li>
+
+            <li style="--sBg: #E1306C; --sFg: #eeeeee;">
+                <a href="https://instagram.com/encryptcodingofficial"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <!--cd486b-->
+
+            <li style="--sBg: #FF0000; --sFg: #eeeeee;">
+                <a href="https://www.youtube.com/channel/UCW3u7kksReiKE5vgPLDNznQ"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+        </ul>
+    </footer>
 
     <script>
         function faq(ele) {

@@ -1,0 +1,99 @@
+/*Banner Start*/
+
+section.hero {
+	background-color: #091929;
+	background-image: url("../Images/WebHero.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 5em;
+	margin-top: 5em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 52vh;
+}
+
+section.hero h1 {
+	color: var(--Accent);
+	font-size: 2em;
+	margin-bottom: 0.5em;
+}
+
+section.hero p {
+	font-size: 1.2em;
+	width: 75%;
+}
+
+/*Banner End*/
+/*Videos Start*/
+
+.videolist {
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 100%;
+	padding: 3em 0;
+}
+
+.videoOutline {
+  --bWidth: 2px;
+  width: 50%;
+  padding: 2em 2em;
+  border-color: var(--Base);
+  border-width: calc(var(--bWidth)*2) var(--bWidth) 0 var(--bWidth);
+}
+
+.videoOutline:first-child {
+	border-left-width: 0;
+}
+
+.videoOutline:last-child {
+	border-right-width: 0;
+}
+
+.videoOutline legend {
+	color: var(--Base);
+	font-size: 1.5em;
+	padding: 0 2ex;
+}
+
+.videolist iframe.video {
+  max-width: 700px;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 2.5em;
+}
+
+/*Videos End*/
+/*HomePageTxt Start*/
+
+.HpAbt {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  font-size: 1.5em;
+  color: var(--Base);
+}
+
+.HpAbt h2 {
+  font-size: 2em;
+  border-bottom: 2px solid #fcd44c;
+  width: fit-content;
+}
+
+.HpAbt p {
+  margin: 1em 0;
+  text-align: justify;
+}
+
+.HpAbt a.readMore {
+  background-color: var(--Base);
+  width: max-content;
+  padding: 0.5em 1em;
+  border-radius: 0.15em;
+}
+
+/*HomePageTxt End*/

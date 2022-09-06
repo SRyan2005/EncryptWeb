@@ -1,16 +1,6 @@
 .faq div {
   border: 1px solid;
   margin: 5px 0px;
-  background-color: var(--White);
-}
-
-#faq-heading {
-  color: black;
-  font-weight: 500;
-  font-size: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .question {
@@ -20,7 +10,6 @@
   padding: 15px;
   max-width: 1075px;
   color: rgb(19, 19, 19);
-  font-family: "BerlinBold";
 }
 
 .answer {
@@ -49,7 +38,7 @@ section#main-faq {
 }
 
 body#faq {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 
 p.question:hover {
@@ -211,20 +200,6 @@ form {
   margin-right: auto;
   margin-left: auto;
   border-color: var(--Accent);
-  border-width: 1px;
-  border-style: solid;
-}
-
-#divider {
-  margin-bottom: 70px;
-  width: 65%;
-  margin-right: 20px;
-  height: 1px;
-  border-radius: 10px;
-  background-color: var(--Base);
-  display: block;
-  margin-top: 20px;
-  border-color: var(--Base);
   border-width: 1px;
   border-style: solid;
 }
