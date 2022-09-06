@@ -1,3 +1,3 @@
 # EncryptWeb
 The upcoming website framework for Encrypt Coding Official.
-[Temporary Branch]
+All commits are merge requests. Please commit to 'temp'
