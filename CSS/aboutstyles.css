@@ -38,15 +38,13 @@
 .row div h3 {
 	font-family: "BerlinBold";
 	font-size: x-large;
-	background-color: black;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding: 5px 0;
 	text-align: center;
-	border-radius: 0px 0px 20px 20px;
 }
 
 .row div img {
 	padding: 1em;
 	width: 100%;
 	height: auto;
+	border-radius: 20px;
 }
