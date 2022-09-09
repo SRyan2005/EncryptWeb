@@ -29,18 +29,24 @@
 
 .row div {
 	background-color: var(--Base);
-	border-radius: 3em 3em 2em 2em;
 	flex-direction: column;
+	aspect-ratio: 3 / 4;
+	width: 18vw;
+	border-radius: 20px;
 }
 
 .row div h3 {
+	font-family: "BerlinBold";
+	font-size: x-large;
 	background-color: black;
-	padding-top: 0.5em;
-	padding-bottom: 0.5em;
-	border-radius: 0 0 3em 3em;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	text-align: center;
+	border-radius: 0px 0px 20px 20px;
 }
 
 .row div img {
 	padding: 1em;
+	width: 100%;
+	height: auto;
 }
