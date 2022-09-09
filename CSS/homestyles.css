@@ -94,6 +94,12 @@ section.hero p {
   width: max-content;
   padding: 0.5em 1em;
   border-radius: 0.15em;
+  letter-spacing: 1.5px;
+  transition: letter-spacing 0.2s;
+}
+
+.HpAbt a.readMore:hover {
+	letter-spacing: 3px;
 }
 
 /*HomePageTxt End*/

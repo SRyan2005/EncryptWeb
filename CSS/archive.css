@@ -1,0 +1,42 @@
+section.archive  {
+    margin-top: 5em;
+    color: var(--Base);
+    font-size: 1.5em;
+    padding: calc(2em / 3);
+    padding-bottom: 3em;
+}
+
+section.archive h2 {
+    font-size: 2em;
+    border-bottom: 2px solid var(--Accent);
+    width: fit-content;
+}
+
+section.archive ul.videos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.archive ul#videos li {
+    display: flex;
+    align-items: center;
+    text-align: end;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+section.archive ul#videos li span {
+    background-color: #000;
+    width: min-content;
+    height: 149.4px;
+    border-radius: 0.5em;
+}
+
+section.archive ul#videos li iframe {
+    border-radius: 0.5em;
+}
+
+section.archive ul#videos li a {
+    color: var(--Base);
+    margin-left: 4ex;
+}
