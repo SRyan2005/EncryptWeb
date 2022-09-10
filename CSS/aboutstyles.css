@@ -9,7 +9,20 @@
 }
 
 .about-section {
-	margin: auto;
+	padding-left: 10vw;
+	padding-right: 10vw;
+}
+
+.vision {
+	display: flex;
+	justify-content: center;
+}
+
+.vision #text > p {
+	font-family: "BerlinRegular";
+	font-size: 30px;
+	color: var(--Base);
+	text-align: center;
 }
 
 .group h2{
