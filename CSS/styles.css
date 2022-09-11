@@ -145,14 +145,15 @@ footer ul.socialMedia {
 
 footer ul.socialMedia li {
 	background-color: var(--sBg);
-	padding: 0.75em;
-	border-radius: 0.75em;
+	padding: 0.65em;
+	border-radius: 0.85em;
 	font-size: 1.5em;
-	transition: transform 0.1s;
+	transition: transform 0.2s;
 }
 
 footer ul.socialMedia li:hover {
 	transform: scale(110%);
+	transition: transform 0.2s;
 }
 
 footer ul.socialMedia i {
