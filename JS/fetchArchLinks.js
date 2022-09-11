@@ -73,7 +73,7 @@ function addPageLinks() {
     `;
     for(let i=0; i<pages.length; i++) {
         finalHtml+=`
-        <a onclick="switchPage(`+i+`)" class="`+((i==currentPageIndx)?`current`:``)+`">`+i+`</a>
+        <a onclick="switchPage(`+i+`)" class="`+((i==currentPageIndx)?`current`:``)+`">`+(i+1)+`</a>
         `;
     }
     pagesNav.innerHTML = finalHtml;

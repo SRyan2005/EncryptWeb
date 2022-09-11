@@ -27,8 +27,14 @@ section.archive ul.videoList li {
     align-items: center;
     justify-content: space-between;
     text-align: right;
-    margin-top: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
     width: 100%;
+    border-top: 0.1em solid #0f284240;
+}
+
+section.archive ul.videoList li:first-child {
+    border-width: 0;
 }
 
 section.archive ul.videoList li span {
@@ -54,13 +60,26 @@ section.archive nav {
 }
 
 section.archive nav a {
-    background-color: var(--Base);
-    width: 25%;
+    color: var(--Base);
+    border: var(--Base) solid 0;
+    border-top: var(--Base) solid 0.1em;
+    border-bottom: var(--Base) solid 0.1em;
+    width: calc((100%/3));
     text-align: center;
-    border-radius: 0.15em;
     padding: 0.2em 0;
 }
 
+section.archive nav a:first-child {
+    border-radius: 0.15em 0 0 0.15em;
+    border-left-width: 0.1em;
+}
+
+section.archive nav a:last-child {
+    border-radius: 0 0.15em 0.15em 0;
+    border-right-width: 0.1em;
+}
+
 section.archive nav a.current {
-    background-color: var(--Accent);
+    background-color: var(--Base);
+    color: var(--Accent);
 }
