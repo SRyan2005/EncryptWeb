@@ -1,196 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encrypt Coding - FAQ</title>
+        <link rel="stylesheet" href="../CSS/styles.css">
+        <link rel="stylesheet" href="../CSS/faqstyles.css">
+        <link rel="icon" type="image/x-icon" href="../Images/EncryptFavicon.ico">
+        <!--The below link is for the social media icons. Other icons can also be added-->
+    	<script src="https://kit.fontawesome.com/aae8de8512.js" crossorigin="anonymous"></script>
+        <script src="../JS/jQuery.js"></script>
+        <script>
+            $(document).ready(function() {
+                $(".inPageNavigation").on('click', function(event) {
+                    if(this.hash !== "") {
+                        event.preventDefault();
+                        var hash = this.hash;
+                        $('html, body').animate(
+                            {scrollTop: $(hash).offset().top},
+                            600, function() {
+                                window.location.hash = hash;
+                            }
+                        );
+                    }
+                });
+            });
+        </script>
+    </head>
 
-<head>
-    <title>Encrypt Coding - FAQ</title>
-    <link rel="stylesheet" href="../CSS/styles.css">
-    <link rel="stylesheet" href="../CSS/faqstyles.css">
-    <link rel="icon" type="image/x-icon" href="../Images/EncryptFavicon.ico">
-    <!--The below link is for the social media icons. Other icons can also be added-->
-	<script src="https://kit.fontawesome.com/aae8de8512.js" crossorigin="anonymous"></script>
-</head>
+    <body id="faq">
+        <header>
+            <a id="encrypt" href="home.html">
+                <div id="logo">
+                    <img src="../Images/EncryptLogo.png" height="70">
+                </div>
+                <h2>Encrypt
+                    <span style="color: var(--Accent)">Coding</span>
+                </h2>
+            </a>
+            <ul class="nav">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="archive.html">Archive</a></li>
+                <li><a href="practice.html">Practice</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </header>
 
-<body id="faq">
-    <header>
-        <a id="encrypt" href="home.html">
-            <div id="logo">
-                <img src="../Images/EncryptLogo.png" height="70">
-            </div>
-            <h2>Encrypt
-                <span style="color: var(--Accent)">Coding</span>
-            </h2>
-        </a>
-        <ul class="nav">
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="archive.html">Archive</a></li>
-            <li><a href="practice.html">Practice</a></li>
-            <li><a href="#">FAQ</a></li>
-        </ul>
-    </header>
-    <div id="entirety-faq">
-        <section id="main-faq">
-            <h1 class="title-heading">FAQ</h1>
-            <hr>
-            <div>
-                <p class="question" onclick='faq(this.querySelector(".opener"))'>Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit.<span class="opener">+</span></p>
-                <p class="answer">Vivamus facilisis, velit id efficitur vestibulum, orci neque tempus lectus, quis
-                    imperdiet neque quam vel augue. Pellentesque blandit suscipit lacus at sodales. Duis vehicula
-                    commodo tortor quis aliquet.
-                </p>
-            </div>
-            <div>
-                <p class="question" onclick='faq(this.querySelector(".opener"))'>Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit.<span class="opener">+</span></p>
-                <p class="answer">Vivamus facilisis, velit id efficitur vestibulum, orci neque tempus lectus, quis
-                    imperdiet neque quam vel augue. Pellentesque blandit suscipit lacus at sodales. Duis vehicula
-                    commodo tortor quis aliquet.
-                </p>
-            </div>
+        <div id="topTarget"></div>
 
-            <div>
-                <p class="question" onclick='faq(this.querySelector(".opener"))'>Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit.<span class="opener">+</span></p>
-                <p class="answer">Vivamus facilisis, velit id efficitur vestibulum, orci neque tempus lectus, quis
-                    imperdiet neque quam vel augue. Pellentesque blandit suscipit lacus at sodales. Duis vehicula
-                    commodo tortor quis aliquet.
-                </p>
-            </div>
-            <div>
-                <p class="question" onclick='faq(this.querySelector(".opener"))'>Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit.<span class="opener">+</span></p>
-                <p class="answer">Vivamus facilisis, velit id efficitur vestibulum, orci neque tempus lectus, quis
-                    imperdiet neque quam vel augue. Pellentesque blandit suscipit lacus at sodales. Duis vehicula
-                    commodo tortor quis aliquet.
-                </p>
-            </div>
-            <div>
-                <p class="question" onclick='faq(this.querySelector(".opener"))'>Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit.<span class="opener">+</span></p>
-                <p class="answer">Vivamus facilisis, velit id efficitur vestibulum, orci neque tempus lectus, quis
-                    imperdiet neque quam vel augue. Pellentesque blandit suscipit lacus at sodales. Duis vehicula
-                    commodo tortor quis aliquet.
-                </p>
-            </div>
-            <div>
-                <p class="question" onclick='faq(this.querySelector(".opener"))'>Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit.<span class="opener">+</span></p>
-                <p class="answer">Vivamus facilisis, velit id efficitur vestibulum, orci neque tempus lectus, quis
-                    imperdiet neque quam vel augue. Pellentesque blandit suscipit lacus at sodales. Duis vehicula
-                    commodo tortor quis aliquet.
-                </p>
-            </div>
-            <div>
-                <p class="question" onclick='faq(this.querySelector(".opener"))'>Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit.<span class="opener">+</span></p>
-                <p class="answer">Vivamus facilisis, velit id efficitur vestibulum, orci neque tempus lectus, quis
-                    imperdiet neque quam vel augue. Pellentesque blandit suscipit lacus at sodales. Duis vehicula
-                    commodo tortor quis aliquet.
-                </p>
-            </div>
-            <div>
-                <p class="question" onclick='faq(this.querySelector(".opener"))'>Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit.<span class="opener">+</span></p>
-                <p class="answer">Vivamus facilisis, velit id efficitur vestibulum, orci neque tempus lectus, quis
-                    imperdiet neque quam vel augue. Pellentesque blandit suscipit lacus at sodales. Duis vehicula
-                    commodo tortor quis aliquet.
-                </p>
-            </div>
-            <div>
-                <p class="question" onclick='faq(this.querySelector(".opener"))'>Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit.<span class="opener">+</span></p>
-                <p class="answer">Vivamus facilisis, velit id efficitur vestibulum, orci neque tempus lectus, quis
-                    imperdiet neque quam vel augue. Pellentesque blandit suscipit lacus at sodales. Duis vehicula
-                    commodo tortor quis aliquet.
-                </p>
-            </div>
-            <div>
-                <p class="question" onclick='faq(this.querySelector(".opener"))'>Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit.<span class="opener">+</span></p>
-                <p class="answer">Vivamus facilisis, velit id efficitur vestibulum, orci neque tempus lectus, quis
-                    imperdiet neque quam vel augue. Pellentesque blandit suscipit lacus at sodales. Duis vehicula
-                    commodo tortor quis aliquet.
-                </p>
-            </div>
-        </section>
+        <div id="entirety-faq">
+            <section id="main-faq">
+                <h1 class="title-heading">FAQ</h1>
+                <hr>
+                <div>
+                    <p class="question" onclick='faq(this.querySelector(".opener"))'>Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit.<span class="opener">+</span></p>
+                    <p class="answer">Vivamus facilisis, velit id efficitur vestibulum, orci neque tempus lectus, quis
+                        imperdiet neque quam vel augue. Pellentesque blandit suscipit lacus at sodales. Duis vehicula
+                        commodo tortor quis aliquet.
+                    </p>
+                </div>
+                <div>
+                    <p class="question" onclick='faq(this.querySelector(".opener"))'>Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit.<span class="opener">+</span></p>
+                    <p class="answer">Vivamus facilisis, velit id efficitur vestibulum, orci neque tempus lectus, quis
+                        imperdiet neque quam vel augue. Pellentesque blandit suscipit lacus at sodales. Duis vehicula
+                        commodo tortor quis aliquet.
+                    </p>
+                </div>
 
-        <hr id="divider">
-        <div id="contact">
-            <h1 class="title-heading">Have any questions? Send us a query!</h1>
-            <hr>
-            <br>
-            <form name="contact-form" action="https://getform.io/f/374ee387-f862-4a7d-ad99-520aefb17b30" method="POST">
-                <label for="username">Name</label>
-                <input type="text" id="username" name="name" placeholder="Your name...">
+                <div>
+                    <p class="question" onclick='faq(this.querySelector(".opener"))'>Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit.<span class="opener">+</span></p>
+                    <p class="answer">Vivamus facilisis, velit id efficitur vestibulum, orci neque tempus lectus, quis
+                        imperdiet neque quam vel augue. Pellentesque blandit suscipit lacus at sodales. Duis vehicula
+                        commodo tortor quis aliquet.
+                    </p>
+                </div>
+                <div>
+                    <p class="question" onclick='faq(this.querySelector(".opener"))'>Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit.<span class="opener">+</span></p>
+                    <p class="answer">Vivamus facilisis, velit id efficitur vestibulum, orci neque tempus lectus, quis
+                        imperdiet neque quam vel augue. Pellentesque blandit suscipit lacus at sodales. Duis vehicula
+                        commodo tortor quis aliquet.
+                    </p>
+                </div>
+                <div>
+                    <p class="question" onclick='faq(this.querySelector(".opener"))'>Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit.<span class="opener">+</span></p>
+                    <p class="answer">Vivamus facilisis, velit id efficitur vestibulum, orci neque tempus lectus, quis
+                        imperdiet neque quam vel augue. Pellentesque blandit suscipit lacus at sodales. Duis vehicula
+                        commodo tortor quis aliquet.
+                    </p>
+                </div>
+                <div>
+                    <p class="question" onclick='faq(this.querySelector(".opener"))'>Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit.<span class="opener">+</span></p>
+                    <p class="answer">Vivamus facilisis, velit id efficitur vestibulum, orci neque tempus lectus, quis
+                        imperdiet neque quam vel augue. Pellentesque blandit suscipit lacus at sodales. Duis vehicula
+                        commodo tortor quis aliquet.
+                    </p>
+                </div>
+                <div>
+                    <p class="question" onclick='faq(this.querySelector(".opener"))'>Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit.<span class="opener">+</span></p>
+                    <p class="answer">Vivamus facilisis, velit id efficitur vestibulum, orci neque tempus lectus, quis
+                        imperdiet neque quam vel augue. Pellentesque blandit suscipit lacus at sodales. Duis vehicula
+                        commodo tortor quis aliquet.
+                    </p>
+                </div>
+                <div>
+                    <p class="question" onclick='faq(this.querySelector(".opener"))'>Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit.<span class="opener">+</span></p>
+                    <p class="answer">Vivamus facilisis, velit id efficitur vestibulum, orci neque tempus lectus, quis
+                        imperdiet neque quam vel augue. Pellentesque blandit suscipit lacus at sodales. Duis vehicula
+                        commodo tortor quis aliquet.
+                    </p>
+                </div>
+                <div>
+                    <p class="question" onclick='faq(this.querySelector(".opener"))'>Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit.<span class="opener">+</span></p>
+                    <p class="answer">Vivamus facilisis, velit id efficitur vestibulum, orci neque tempus lectus, quis
+                        imperdiet neque quam vel augue. Pellentesque blandit suscipit lacus at sodales. Duis vehicula
+                        commodo tortor quis aliquet.
+                    </p>
+                </div>
+                <div>
+                    <p class="question" onclick='faq(this.querySelector(".opener"))'>Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit.<span class="opener">+</span></p>
+                    <p class="answer">Vivamus facilisis, velit id efficitur vestibulum, orci neque tempus lectus, quis
+                        imperdiet neque quam vel augue. Pellentesque blandit suscipit lacus at sodales. Duis vehicula
+                        commodo tortor quis aliquet.
+                    </p>
+                </div>
+            </section>
 
-                <label for="email">Email ID</label>
-                <input type="email" id="email" name="email" placeholder="Your email...">
+            <hr id="divider">
+            <div id="contact">
+                <h1 class="title-heading">Have any questions? Send us a query!</h1>
+                <hr>
+                <br>
+                <form name="contact-form" action="https://getform.io/f/374ee387-f862-4a7d-ad99-520aefb17b30" method="POST">
+                    <label for="username">Name</label>
+                    <input type="text" id="username" name="name" placeholder="Your name...">
 
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" name="subject" placeholder="Your subject...">
+                    <label for="email">Email ID</label>
+                    <input type="email" id="email" name="email" placeholder="Your email...">
 
-                <label for="body">Your Query</label>
-                <textarea id="body" name="body" placeholder="Write something..."
-                    style="height:80px"></textarea>
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Your subject...">
 
-                <button type="submit" id="button" onclick="submitForm()">Submit</button>
-            </form>
+                    <label for="body">Your Query</label>
+                    <textarea id="body" name="body" placeholder="Write something..."
+                        style="height:80px"></textarea>
+
+                    <button type="submit" id="button" onclick="submitForm()">Submit</button>
+                </form>
+            </div>
         </div>
-    </div>
 
-    <footer>
-        <h3>Contact Us</h3>
-        <ul class="socialMedia">
-            <li style="--sBg: #2d81e2; --sFg: #eeeeee;">
-                <a href="mailto:encryptcoding@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-            </li>
+        <footer>
+            <h3>Contact Us</h3>
+            <ul class="socialMedia">
+                <li style="--sBg: #2d81e2; --sFg: #eeeeee;">
+                    <a href="mailto:encryptcoding@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                </li>
 
-            <li style="--sBg: #E1306C; --sFg: #eeeeee;">
-                <a href="https://instagram.com/encryptcodingofficial"><i class="fa-brands fa-instagram"></i></a>
-            </li>
-            <!--cd486b-->
+                <li style="--sBg: #E1306C; --sFg: #eeeeee;">
+                    <a href="https://instagram.com/encryptcodingofficial"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <!--cd486b-->
 
-            <li style="--sBg: #FF0000; --sFg: #eeeeee;">
-                <a href="https://www.youtube.com/channel/UCW3u7kksReiKE5vgPLDNznQ"><i class="fa-brands fa-youtube"></i></a>
-            </li>
-        </ul>
-    </footer>
+                <li style="--sBg: #FF0000; --sFg: #eeeeee;">
+                    <a href="https://www.youtube.com/channel/UCW3u7kksReiKE5vgPLDNznQ"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+            </ul>
+            <a href="#topTarget" class="inPageNavigation backUp">Back Up</a>
+        </footer>
 
-    <script>
-        function faq(ele) {
-            var x = ele.parentElement.nextElementSibling.style.cssText;
-            if (x == 'max-height: 500px;') {
-                ele.style.cssText = 'transform: rotate(0deg);';
-                ele.parentElement.nextElementSibling.style.cssText = "transition:1s;max-height:0px;";
-                setTimeout(function () {
-                    ele.parentElement.style.cssText = "background-color:;"
-                }, 1100);
+        <script>
+            function faq(ele) {
+                var x = ele.parentElement.nextElementSibling.style.cssText;
+                if (x == 'max-height: 500px;') {
+                    ele.style.cssText = 'transform: rotate(0deg);';
+                    ele.parentElement.nextElementSibling.style.cssText = "transition:1s;max-height:0px;";
+                    setTimeout(function () {
+                        ele.parentElement.style.cssText = "background-color:;"
+                    }, 1100);
+                }
+                else {
+                    ele.style.cssText = 'transform: rotate(45deg);';
+                    ele.parentElement.nextElementSibling.style.cssText = "max-height:500px;";
+                    ele.parentElement.parentElement.style.cssText = "background-color:rgb(244, 244, 244)"
+                    ele.parentElement.style.cssText = "background-color:rgb(244, 244, 244);"
+                }
             }
-            else {
-                ele.style.cssText = 'transform: rotate(45deg);';
-                ele.parentElement.nextElementSibling.style.cssText = "max-height:500px;";
-                ele.parentElement.parentElement.style.cssText = "background-color:rgb(244, 244, 244)"
-                ele.parentElement.style.cssText = "background-color:rgb(244, 244, 244);"
+            function submitForm() {
+                var con = document.getElementsByName('contact-form')[0];
+                con.submit();
+                con.reset();
+                return false;
             }
-        }
-        function submitForm() {
-            var con = document.getElementsByName('contact-form')[0];
-            con.submit();
-            con.reset();
-            return false;
-        }
-        const tx = document.getElementsByTagName("textarea");
-        for (let i = 0; i < tx.length; i++) {
-            tx[i].setAttribute("style", "height:" + (tx[i].scrollHeight) + "px;overflow-y:hidden;");
-            tx[i].addEventListener("input", OnInput, false);
-        }
+            const tx = document.getElementsByTagName("textarea");
+            for (let i = 0; i < tx.length; i++) {
+                tx[i].setAttribute("style", "height:" + (tx[i].scrollHeight) + "px;overflow-y:hidden;");
+                tx[i].addEventListener("input", OnInput, false);
+            }
 
-        function OnInput() {
-            this.style.height = 0;
-            this.style.height = (this.scrollHeight) + "px";
-        }
+            function OnInput() {
+                this.style.height = 0;
+                this.style.height = (this.scrollHeight) + "px";
+            }
 
-    </script>
-</body>
-
+        </script>
+    </body>
 </html>

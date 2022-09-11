@@ -67,6 +67,7 @@ section.archive nav a {
     width: calc((100%/3));
     text-align: center;
     padding: 0.2em 0;
+    cursor: pointer;
 }
 
 section.archive nav a:first-child {

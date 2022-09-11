@@ -4,7 +4,7 @@ let videoList = [];
 let pages = [];
 let currentPageIndx = 0;
 let numOfPages;
-let vidPerPage = 10;
+let vidPerPage = 8;
 let channelId = 'UCW3u7kksReiKE5vgPLDNznQ';
 
 //The below http request fetches the youtube playlist data for the channels videos in json format.

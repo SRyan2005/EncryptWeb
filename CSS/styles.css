@@ -140,6 +140,7 @@ footer ul.socialMedia {
 	display: flex;
 	justify-content: space-evenly;
 	padding: 1em 0;
+	margin-bottom: 0.5em;
 }
 
 footer ul.socialMedia li {
@@ -157,6 +158,18 @@ footer ul.socialMedia li:hover {
 footer ul.socialMedia i {
 	color: var(--sFg);
 	font-weight: bold;
+}
+
+footer a.backUp {
+	background-color: var(--Accent);
+	color: var(--Base);
+	padding: 0.2em 4ex;
+	border-radius: 0.15em;
+	transition: letter-spacing 0.2s;
+}
+
+footer a.backUp:hover {
+	letter-spacing: 3.2px;
 }
 
 /*Footer End*/

@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Encrypt Coding Official</title>
 		<link rel="stylesheet" href="../CSS/styles.css">
 		<link rel="stylesheet" href="../CSS/homestyles.css">
 		<link rel="icon" type="image/x-icon" href="../Images/EncryptFavicon.ico">
 		<!--The below link is for the social media icons. Other icons can also be added-->
 		<script src="https://kit.fontawesome.com/aae8de8512.js" crossorigin="anonymous"></script>
+        <script src="../JS/jQuery.js"></script>
+        <script>
+            $(document).ready(function() {
+                $(".inPageNavigation").on('click', function(event) {
+                    if(this.hash !== "") {
+                        event.preventDefault();
+                        var hash = this.hash;
+                        $('html, body').animate(
+                            {scrollTop: $(hash).offset().top},
+                            600, function() {
+                                window.location.hash = hash;
+                            }
+                        );
+                    }
+                });
+            });
+        </script>
 	</head>
+
+	<div id="topTarget"></div>
 
 	<body>
 		<header>
@@ -86,6 +106,7 @@
 					<a href="https://www.youtube.com/channel/UCW3u7kksReiKE5vgPLDNznQ"><i class="fa-brands fa-youtube"></i></a>
 				</li>
 			</ul>
+            <a href="#topTarget" class="inPageNavigation backUp">Back Up</a>
 		</footer>
 	</body>
 </html>
