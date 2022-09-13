@@ -51,6 +51,7 @@ section.archive ul.videoList li iframe {
 section.archive ul.videoList li a {
     color: var(--Base);
     text-align: right;
+    font-style: italic;
 }
 
 section.archive nav {

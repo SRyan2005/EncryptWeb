@@ -55,7 +55,7 @@ function renderVideos() {
                     src="https://www.youtube.com/embed/` + v.id + `" frameborder="0"
                     allowfullscreen="true" loading="lazy"></iframe>
                 </span>
-                <a href="https://www.youtube.com/watch?v=` + v.id + `">` + v.title + `</a>
+                <a href="https://www.youtube.com/watch?v=` + v.id + `" target="_blank">` + v.title + `</a>
             </li>
             `;
         }
