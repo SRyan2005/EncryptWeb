@@ -1,5 +1,4 @@
 section.archive  {
-    margin-top: 5em;
     color: var(--Base);
     font-size: 1.5em;
     padding: calc(2em / 3);
@@ -39,13 +38,15 @@ section.archive ul.videoList li:first-child {
 
 section.archive ul.videoList li span {
     background-color: #000;
-    width: min-content;
-    height: 149.4px;
-    border-radius: 0.5em;
+    height: 10em;
+    margin-right: 5ex;
+    border-radius: 0.75em;
 }
 
 section.archive ul.videoList li iframe {
     border-radius: 0.5em;
+    height: 100%;
+    aspect-ratio: 16 / 9;
 }
 
 section.archive ul.videoList li a {
@@ -61,6 +62,7 @@ section.archive nav {
 }
 
 section.archive nav a {
+    font-size: 12px;
     color: var(--Base);
     border: var(--Base) solid 0;
     border-top: var(--Base) solid 0.1em;
