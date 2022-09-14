@@ -38,7 +38,7 @@ section.archive ul.videoList li:first-child {
 
 section.archive ul.videoList li span {
     background-color: #000;
-    height: 10em;
+    height: 7.5em;
     margin-right: 5ex;
     border-radius: 0.75em;
 }
@@ -56,13 +56,13 @@ section.archive ul.videoList li a {
 }
 
 section.archive nav {
-    margin-top: 1em;
+    margin: 1em 0;
     display: flex;
     justify-content: space-between;
 }
 
 section.archive nav a {
-    font-size: 12px;
+    font-size: 1.5em;
     color: var(--Base);
     border: var(--Base) solid 0;
     border-top: var(--Base) solid 0.1em;
@@ -86,4 +86,10 @@ section.archive nav a:last-child {
 section.archive nav a.current {
     background-color: var(--Base);
     color: var(--Accent);
+}
+
+@media only screen and (max-width:750px) {
+    section.archive ul.videoList li span {
+        height: 5em;
+    }
 }
