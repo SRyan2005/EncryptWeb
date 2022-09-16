@@ -41,6 +41,10 @@ body#faq {
   background-color: rgb(255, 255, 255);
 }
 
+#body {
+  height: 40px;
+}
+
 p.question:hover {
   background-color: rgb(244, 244, 244);
 }

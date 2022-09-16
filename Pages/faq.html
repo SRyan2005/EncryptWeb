@@ -10,6 +10,7 @@
     <!--The below link is for the social media icons. Other icons can also be added-->
     <script src="https://kit.fontawesome.com/aae8de8512.js" crossorigin="anonymous"></script>
     <script src="../JS/jQuery.js"></script>
+    <script src="../JS/faqForm.js"></script>
     <script>
         $(document).ready(function () {
             $(".inPageNavigation").on('click', function (event) {
@@ -171,7 +172,6 @@
             </li>
             <!--cd486b-->
 
-<<<<<<< HEAD
             <li style="--sBg: #FF0000; --sFg: #eeeeee;">
                 <a href="https://www.youtube.com/channel/UCW3u7kksReiKE5vgPLDNznQ"><i
                         class="fa-brands fa-youtube"></i></a>
@@ -179,7 +179,6 @@
         </ul>
         <a href="#topTarget" class="inPageNavigation backUp">Back Up</a>
     </footer>
-
     <script>
         function faq(ele) {
             var x = ele.parentElement.nextElementSibling.style.cssText;
@@ -203,26 +202,15 @@
             con.reset();
             return false;
         }
-        const tx = document.querySelector("textarea");
-        tx.setAttribute("style", "height:" + (tx.scrollHeight) + "px;overflow-y:hidden;");
-        tx.addEventListener("input", OnInput, false);
-
-        function OnInput() {
-            this.style.height = (this.scrollHeight) + "px";
+        textarea = document.querySelector("textarea");
+        textarea.addEventListener('input', autoResize, false);
+      
+        function autoResize() {
+            this.style.height = 'auto';
+            this.style.height = this.scrollHeight + 'px';
         }
+
     </script>
 </body>
 
 </html>
-=======
-                <li style="--sBg: #FF0000; --sFg: #eeeeee;">
-                    <a href="https://www.youtube.com/channel/UCW3u7kksReiKE5vgPLDNznQ"><i class="fa-brands fa-youtube"></i></a>
-                </li>
-            </ul>
-            <a href="#topTarget" class="inPageNavigation backUp">Return to Top</a>
-        </footer>
-
-        <script src="../JS/faqForm.js"></script>
-    </body>
-</html>
->>>>>>> 0a0034efebd7c04568c0b0f868e07a128eecbf54
