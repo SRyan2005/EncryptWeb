@@ -138,11 +138,12 @@
         </section>
 
         <hr id="divider">
-        <div id="contact">
+        <div id="contact" style="max-width: 1090px;">
             <h1 class="title-heading">Have any questions? Send us a query!</h1>
             <hr>
             <br>
-            <form name="contact-form" action="https://getform.io/f/374ee387-f862-4a7d-ad99-520aefb17b30" method="POST">
+            <form id="formID" name="contact-form" action="https://getform.io/f/374ee387-f862-4a7d-ad99-520aefb17b30"
+                method="POST">
                 <label for="username">Name</label>
                 <input type="text" id="username" name="name" placeholder="Your name...">
 
@@ -152,8 +153,9 @@
                 <label for="subject">Subject</label>
                 <input type="text" id="subject" name="subject" placeholder="Your subject...">
 
-                <label for="body">Your Query</label>
-                <textarea id="body" name="body" placeholder="Write something..." style="height:90px"></textarea>
+                <label for="body">Your Query <span style="color:red;font-family: BerlinRegular;" id="maxlength"></span></label>
+                <textarea id="body" name="body" maxlength="250" placeholder="Write something..."
+                    style="height:90px"></textarea>
 
                 <button type="submit" id="button" onclick="submitForm()">Submit</button>
             </form>
@@ -180,37 +182,27 @@
         <a href="#topTarget" class="inPageNavigation backUp">Back Up</a>
     </footer>
     <script>
-        function faq(ele) {
-            var x = ele.parentElement.nextElementSibling.style.cssText;
-            if (x == 'max-height: 500px;') {
-                ele.style.cssText = 'transform: rotate(0deg);';
-                ele.parentElement.nextElementSibling.style.cssText = "transition:1s;max-height:0px;";
-                setTimeout(function () {
-                    ele.parentElement.style.cssText = "background-color:;"
-                }, 1100);
+        const messageEle = document.getElementById('body');
+        messageEle.addEventListener('input', function (e) {
+            const target = e.target;
+
+            // Get the `maxlength` attribute
+            const maxLength = target.getAttribute('maxlength');
+
+            // Count the current number of characters
+            const currentLength = target.value.length;
+            
+            if(currentLength == 250) {
+                document.getElementById("maxlength").innerHTML = "- Max word limit reached!";
             }
             else {
-                ele.style.cssText = 'transform: rotate(45deg);';
-                ele.parentElement.nextElementSibling.style.cssText = "max-height:500px;";
-                ele.parentElement.parentElement.style.cssText = "background-color:rgb(244, 244, 244)"
-                ele.parentElement.style.cssText = "background-color:rgb(244, 244, 244);"
+                document.getElementById("maxlength").innerHTML = "";
             }
-        }
-        function submitForm() {
-            var con = document.getElementsByName('contact-form')[0];
-            con.submit();
-            con.reset();
-            return false;
-        }
-        textarea = document.querySelector("textarea");
-        textarea.addEventListener('input', autoResize, false);
-      
-        function autoResize() {
-            this.style.height = 'auto';
-            this.style.height = this.scrollHeight + 'px';
-        }
+
+        });
 
     </script>
+
 </body>
 
 </html>
