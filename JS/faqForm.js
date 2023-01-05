@@ -21,7 +21,7 @@
             con.reset();
             return false;
         }
-        // textarea = document.querySelector("textarea");
+         // textarea = document.querySelector("textarea");
         // textarea.addEventListener('input', autoResize, false);
 
         // function autoResize() {

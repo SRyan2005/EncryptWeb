@@ -8,7 +8,7 @@ let vidPerPage = 8;
 let channelId = 'UCW3u7kksReiKE5vgPLDNznQ';
 
 //The below http request fetches the youtube playlist data for the channels videos in json format.
-const url = 'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet%2CcontentDetails&maxResults=50&playlistId=UUW3u7kksReiKE5vgPLDNznQ&key=AIzaSyAghAHiJ3QQhGTj5RGG6aiOOrj_W1b-iWc';
+const url =  'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet%2CcontentDetails&maxResults=50&playlistId=UUW3u7kksReiKE5vgPLDNznQ&key=AIzaSyAghAHiJ3QQhGTj5RGG6aiOOrj_W1b-iWc';
 //Playlist Id = UUW3u7kksReiKE5vgPLDNznQ
 //API Key = AIzaSyAghAHiJ3QQhGTj5RGG6aiOOrj_W1b-iWc
 
